@@ -1,7 +1,7 @@
 # How to launch your Python Application on PEPPER
 
 #### Build your python application
-Follow the [instructions](http://doc.aldebaran.com/2-4/dev/tutos/create_a_new_service.html#dev-tuto-create-service) to create python/c++ package until **step Four**.
+Follow the [instructions](http://doc.aldebaran.com/2-4/dev/tutos/create_a_new_service.html#dev-tuto-create-service) provided by NAOqi to create python/c++ package until **step Four**.
 
 In step four, if you are using Python only, DO NOT execute the command ```qisrc add .```
 
