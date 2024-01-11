@@ -1,7 +1,8 @@
 # How to launch your Python Application on PEPPER
 
 #### Build your python application
-Follow the [instructions](http://doc.aldebaran.com/2-4/dev/tutos/create_a_new_service.html#dev-tuto-create-service) to create python/c++ package until **step Four**.\n
+Follow the [instructions](http://doc.aldebaran.com/2-4/dev/tutos/create_a_new_service.html#dev-tuto-create-service) to create python/c++ package until **step Four**.
+
 In step four, if you are using Python only, DO NOT execute the command ```qisrc add .```
 
 #### Creat application package
@@ -27,7 +28,8 @@ qipkg deploy-package pkg_name.pkg --url nao@yournaoIP
 Enter your robot's password when prompted.
 
 ###### Handle Syntax error
-Ignore this error. \n
+Ignore this error. 
+
 The syntax error occured in __init__.py, line 92 is related to the Pepper sdk installed on your laptop, which may have a path like (path/to/pynaoqi xxx/lib/pyhon2.7/site-packages/qi/__init__.py). Correct the error in line 92 by changing 'async' to 'Async'. However, fixing this issue might cause the package not to appear on the robot. 
 
 Disregard the systax error, and check if the package is on your robot by executing ```ls``` in robot's shell terminal.
