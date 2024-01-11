@@ -27,10 +27,7 @@ qipkg deploy-package pkg_name.pkg --url nao@yournaoIP
 ```
 Enter your robot's password when prompted.
 
-###### Handle Syntax error
-Ignore this error. 
-
-The syntax error occured in __init__.py, line 92 is related to the Pepper sdk installed on your laptop, which may have a path like (path/to/pynaoqi xxx/lib/pyhon2.7/site-packages/qi/__init__.py). Correct the error in line 92 by changing 'async' to 'Async'. However, fixing this issue might cause the package not to appear on the robot. 
+###### Handle Syntax error Ignore this error. The syntax error occured in __init__.py, line 92 is related to the Pepper sdk installed on your laptop, which may have a path like (path/to/pynaoqi xxx/lib/pyhon2.7/site-packages/qi/__init__.py). Correct the error in line 92 by changing 'async' to 'Async'. However, fixing this issue might cause the package not to appear on the robot. 
 
 Disregard the systax error, and check if the package is on your robot by executing ```ls``` in robot's shell terminal.
 
