@@ -1,0 +1,179 @@
+html, body{
+    width: 1280px; 
+    height: 800px;
+    margin: 0;
+    overflow: hidden;
+    background-image: url(../images/rainbow.jpg);
+    background-repeat: no-repeat;
+    background-size: 1280px 800px;
+}
+/* FONTS */
+@font-face {
+    font-family: "Kode mono";
+    src: url(../fonts/Kode_Mono/KodeMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Silkscreen";
+    src: url(../fonts/Silkscreen/Silkscreen-Regular.ttf);
+    font-weight: 700;
+}
+
+
+.header_div{
+    position: relative;
+    top:0;
+    width: 100%;
+}
+.content_div{
+    position: relative;
+    width: 100%;
+}
+.footer_div{
+    position: relative;
+    height:60px;
+    width: 100%;
+}
+
+.headline{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    margin-top:40px;
+    font-family: "Kode mono";
+    font-weight: bolder;
+    font-size:80px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.headline_2{
+    position: absolute;
+    margin-top:40px;
+    font-family: "Kode mono";
+    font-weight: bolder;
+    font-size: 200px;
+    font-weight: 900;
+    color: white;
+    left: 70px;
+}
+.subheader{
+    color: white;
+    font-family: "Silkscreen";
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    margin: 0 0 0 70px;
+
+}
+
+.container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.item_container{
+    position: relative;
+    width : 350px;
+    height : 450px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+.item_img{
+    position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+    margin: 30px auto 0 auto; 
+
+}
+.item_title{
+    position: relative;
+    width: 350px;
+    height: 80px;
+    margin-top: -30px;
+    color: black;
+    vertical-align: middle;
+}
+.item_title>p{
+    font-size: xx-large;
+    font-weight: 400;
+    font-family: "Silkscreen";
+}
+
+.events{
+    position: relative;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    margin: 30px auto 0 auto;
+}
+.events_description{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    width: 320px;
+    height: 50px;
+    top:420px;
+    vertical-align: middle;
+    text-align: left;
+}
+.events_description>div{
+    font-family: "Kode Mono";
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 20px;
+}
+.events_description>p{
+    font-family: "Kodemono";
+    font-weight: lighter;
+    text-align: left;
+    margin-top:3px;
+    padding-left: 20px;
+}
+
+
+/* default */
+.arrow{
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    filter: invert(100%);
+}
+#arrow_left{
+    position: fixed;
+    transform: rotate(180deg); 
+    top:375px; 
+    left:5px;
+}
+#arrow_right{
+    position: fixed;
+    top:375px; 
+    right:5px;
+}
+.button_home{
+    position: absolute;
+    background: url(../images/home.png) no-repeat;
+    background-size: contain;
+    border: 10px transparent;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    filter: invert(100%);
+}
