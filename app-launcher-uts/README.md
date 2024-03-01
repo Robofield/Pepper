@@ -8,7 +8,9 @@
 
 
 
+### How to edit page buttons
 
+### How to edit labs information / speech script
    
 ##### Copyright and LICENSE 
 * The original app-launcher is provided by SoftBank Robotics Labs and is subject to their copyright.
