@@ -8,6 +8,8 @@ This app launcher is a service designed to facilitate easy access to application
 * **Volume Adjustment**: Adjust the volme settings directly from the launcher interface.
 * **Power Button**: Easily power off or restart the pepper robot with this button.
 * **All Apps List**: Access a comprehensive list of all installed applications on the Pepper.
+
+  <img src="https://github.com/Robofield/Pepper/assets/73512536/9015b3be-5e6e-4e18-b959-94e116618468" width="300" height="auto">
 * **Page Buttons**: These button allow uers to cutomize the launcher interface by adding or removing desired applications to focus on.
 
 ## Installation
