@@ -22,3 +22,6 @@ To install this application, follow the procedure :
    2. Open the `html/js/projects.json` and edit project name and image url.
 
    If you do not have a custom image, the default UTS banner will be used.
+
+#### Contributors
+- Mina Jang (minazzanya@gmail.com)
