@@ -1,7 +1,30 @@
-## Pepper App Launcher
-   This project is a modified version of the app-launcher provided by SoftBank Robotics Labs, customized to be compatible with UTS.
+# Pepper App Launcher
+
+This app launcher is a service designed to facilitate easy access to applications and settings on Pepper robots, particularly when the Ethernet is not connected upon booting. It was developed based on the app-launcher framework from SoftBank Robotics Labs, with modifications to suit the needs of UTS and the Robotics Institute. 
 
 
+## Features
+
+* **Volume Adjustment**: Adjust the volme settings directly from the launcher interface.
+* **Power Button**: Easily power off or restart the pepper robot with this button.
+* **All Apps List**: Access a comprehensive list of all installed applications on the Pepper.
+* **Page Buttons**: These button allow uers to cutomize the launcher interface by adding or removing desired applications to focus on.
+
+## Installation
+
+
+## Costomization
+
+### Editing page buttons
+To edit the buttons displayed on the launcher interface, you can modify the ["defaultPreferences.json"](https://github.com/Robofield/Pepper/tree/main/app-launcher-uts/App-Launcher/lib) in lib directory. Each button's information is represented by key-value pairs in this file. You can change the value of "title" key to set the desired button name, and modify the value of "apps" key to display the applications icon on the page.
+
+Here's a step-by-step guide:
+1. Open the "defaultPreference.json" in the lib folder.
+2. Modify, add, or remove the value of "title" to your desired button name.
+3. Modify, add, or remover the valu of "apps" to uuid of the applications which you want to deiplay on that page. You can find the uuid of the application from "manifest.xml" or edit the property from Choregraphe.
+4. Save the changes and reinstall the service.
+
+Once you have made the modifications and saved them, you will need to reinstall the service through Choregraphe. If you do not know how to install it, please refer to **Installation**.
 
 
 
@@ -14,4 +37,4 @@
    
 ##### Copyright and LICENSE 
 * The original app-launcher is provided by SoftBank Robotics Labs and is subject to their copyright.
-Please note that while this version has been customized for use with UTS, the original work remains subject to SoftBank Robotics Labs' copyright. Refer to the [COPYRIGHT](https://github.com/Robofield/Pepper/tree/main/app-launcher-uts/COPYRIGHT) folder or [their repository](https://github.com/softbankrobotics-labs/app-launcher) for more details. 
+Please note that while this version has been customized for use with UTS, the original work remains subject to SoftBank Robotics Labs' copyright. Refer to the [COPYRIGHT](https://github.com/Robofield/Pepper/tree/main/app-launcher-uts/COPYRIGHT) folder or [their repository](https://github.com/softbankrobotics-labs/app-launcher, "SoftBankRobotics-labs app-launcher repository") for more details. 
