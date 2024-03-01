@@ -15,25 +15,17 @@ This app launcher is a service designed to facilitate easy access to application
 
 ## Costomization
 
-### Editing page buttons
-To edit the buttons displayed on the launcher interface, you can modify the ["defaultPreferences.json"](https://github.com/Robofield/Pepper/tree/main/app-launcher-uts/App-Launcher/lib) in lib directory. Each button's information is represented by key-value pairs in this file. You can change the value of "title" key to set the desired button name, and modify the value of "apps" key to display the applications icon on the page.
+#### Editing page buttons
+   To edit the buttons displayed on the launcher interface, you can modify the ["defaultPreferences.json"](https://github.com/Robofield/Pepper/tree/main/app-launcher-uts/App-Launcher/lib) in       lib directory. Each button's information is represented by key-value pairs in this file. You can change the value of "title" key to set the desired button name, and modify the value of          "apps" key to display the applications icon on the page.
 
-Here's a step-by-step guide:
-1. Open the "defaultPreference.json" in the lib folder.
-2. Modify, add, or remove the value of "title" to your desired button name.
-3. Modify, add, or remover the valu of "apps" to uuid of the applications which you want to deiplay on that page. You can find the uuid of the application from "manifest.xml" or edit the property from Choregraphe.
-4. Save the changes and reinstall the service.
+   Here's a step-by-step guide:
 
-Once you have made the modifications and saved them, you will need to reinstall the service through Choregraphe. If you do not know how to install it, please refer to **Installation**.
+   1. Open the "defaultPreference.json" in the lib folder.
+   2. Modify, add, or remove the value of "title" to your desired button name.
+   3. Modify, add, or remover the valu of "apps" to uuid of the applications which you want to deiplay on that page. You can find the uuid of the application from "manifest.xml" or edit the          property from Choregraphe.
+   4. Save the changes and reinstall the service.
 
-
-
-
-
-
-### How to edit page buttons
-
-### How to edit labs information / speech script
+   Once you have made the modifications and saved them, you will need to reinstall the service through Choregraphe. If you do not know how to install it, please refer to **Installation**.
    
 ##### Copyright and LICENSE 
 * The original app-launcher is provided by SoftBank Robotics Labs and is subject to their copyright.
