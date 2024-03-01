@@ -91,7 +91,7 @@ Preferences you have to add  in domain com.aldebaran.system.tablet:
   <language>zh_TW</language>
  </descriptionLanguages>
  <contents>
-  <dialogContent topicName="applauncher_pages_names_topic" typeVersion="1.0">
+  <dialogContent typeVersion="1.0" topicName="applauncher_pages_names_topic">
    <topic language="ar_SA" path="applauncher_pages_names_topic/applauncher_pages_names_topic_arw.top"/>
    <topic language="cs_CZ" path="applauncher_pages_names_topic/applauncher_pages_names_topic_czc.top"/>
    <topic language="da_DK" path="applauncher_pages_names_topic/applauncher_pages_names_topic_dad.top"/>
@@ -121,6 +121,6 @@ Preferences you have to add  in domain com.aldebaran.system.tablet:
   <robotRequirement model="JULIETTE"/>
  </requirements>
  <services>
-  <service name="AppLauncher" autorun="true" execStart="/usr/bin/python2 lib/app_launcher.py"/>
+  <service execStart="/usr/bin/python2 lib/app_launcher.py" autorun="true" name="AppLauncher"/>
  </services>
 </package>

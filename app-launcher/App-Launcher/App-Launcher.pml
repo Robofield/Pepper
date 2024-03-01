@@ -28,6 +28,7 @@
         <File name="jquery-3.1.1.min" src="html/js/jquery-3.1.1.min.js" />
         <File name="change_screen" src="html/change_screen.ogg" />
         <File name="Pepper-white" src="html/images/Pepper-white.png" />
+        <File name="background" src="html/images/background.jpg" />
         <File name="generic_package_icon" src="html/images/generic_package_icon.png" />
         <File name="loading" src="html/images/loading.gif" />
         <File name="sleeping" src="html/images/sleeping.gif" />
@@ -37,8 +38,7 @@
         <File name="volume-down" src="html/images/volume-down.png" />
         <File name="volume-up" src="html/images/volume-up.png" />
         <File name="icon" src="icon.png" />
-        <File name="background" src="html/images/background.svg" />
-        <File name="background1" src="html/images/background1.svg" />
+        <File name="UTS Screen" src="html/images/UTS Screen.png" />
     </Resources>
     <Topics>
         <Topic name="applauncher_pages_names_topic_arw" src="applauncher_pages_names_topic/applauncher_pages_names_topic_arw.top" topicName="applauncher_pages_names_topic" language="ar_SA" />

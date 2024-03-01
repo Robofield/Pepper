@@ -57,6 +57,15 @@ function display_apps_names(display) {
 /***
 PAGES MANAGER: creates the pages
 ***/
+
+function make_color(){
+	//To get color from the list in random order
+	// var new_color = color[Math.floor(Math.random() * color.length)];
+   var new_color = color[current_color];
+   current_color += 1;
+   if(current_color==color.length) current_color=0;
+   return new_color;
+}
 function add_app_to_full_apps_list(id, launch_path, icon, name) {
     var element_id = "dynamic_all_apps_app_"+id;
     var div_id = element_id+'_div'
@@ -107,6 +116,7 @@ function add_app_to_page(page_div_id, app_id, name, launch_path, icon) {
     }
 }
 function add_page(id, name, apps) {
+    //console.log("Adding page "+id)
     var identifier = "dynamic_page"+id
 
     // Add the page div
@@ -126,13 +136,16 @@ function add_page(id, name, apps) {
     }
 
     // Add page button on home page
+    var nbButtons = $(".dynamic_pageHome_app_button").length;
     var line=1;
+    if(nbButtons%2 == 1) line=2;
     var parent_div_class = "#dynamic_pageHome_div .dynamic_pageHome_line"+line+"_div"
     var button_div_id = "content_ready_pageHome_button_"+id
     $(parent_div_class).append(
         '<div id="'+button_div_id+'" class="dynamic_pageHome_app_button">'+
         '   <div>'+name+'</div>'+
         '</div>');
+    $('#'+button_div_id).children().css('background-color', make_color());
 
     // add home button action on click
     $("#"+button_div_id).off('touchmove click');
@@ -141,6 +154,16 @@ function add_page(id, name, apps) {
         audio.play();
         requestPage(id);
     });
+
+    // make sure icons are aligned correctly depending on how many are on each line
+    var nbButtonsLine1 = $("#dynamic_pageHome_div .dynamic_pageHome_line1_div").children().length;
+    var nbButtonsLine2 = $("#dynamic_pageHome_div .dynamic_pageHome_line2_div").children().length;
+    if((nbButtonsLine1-nbButtonsLine2)%2 == 0) {
+        $("#dynamic_pageHome_div .dynamic_pageHome_line2_div").addClass("line2_div_right");
+    } else {
+        $("#dynamic_pageHome_div .dynamic_pageHome_line2_div").removeClass("line2_div_right");
+    }
+
 
 }
 
@@ -163,7 +186,8 @@ function onCurrentPageChanged(new_page_displayed) {
     display_page("dynamic_page"+new_page_displayed+"_div")
 }
 function onAppFullListChanged(new_app_list) {
-    console.info("New app list");
+    console.info("New app list")
+    //console.info(new_app_list)
     $("#footer_all_apps_dropdown").html("");
     for (var id in new_app_list) {
         var launch_path = new_app_list[id]["uuid"]+"/"+new_app_list[id]["behavior_path"]
@@ -173,7 +197,8 @@ function onAppFullListChanged(new_app_list) {
     }
 }
 function onPagesDefinitionChanged(new_page_definition) {
-    console.info("New pages definition");
+    console.info("New pages definition")
+    //console.info(new_page_definition)
     $("#content_ready_div").html(
         '<div id="dynamic_pageHome_div">'+
              '<div class="dynamic_pageHome_line1_div"></div>'+
@@ -265,17 +290,6 @@ function requestRunBehavior(launch_path) {
         ap.runBehavior(launch_path);
     });
 }
-function requestShutdown(){
-    console.info("Request shutdown");
-    session.service("ALSystem").then( function(system){
-        system.shutdown();
-    });
-}
-function speech(text){
-    session.service("ALTextToSpeech").then( function(tts){
-        tts.say(text);
-    });
-}
 
 // Connect buttons with functions
 $(document).ready(
@@ -283,22 +297,12 @@ $(document).ready(
         $('#button_home').on('touchmove click', function(){
             requestPage("Home");
         });
-        $('#button_off').on('touchmove click', function(){
-            $("#content_popup_div").show();
-            speech("Are you sure you want to turn off me ?");
-        });
-        $('#turnOff').on('touchmove click', function(){
-            requestShutdown();
-        });
-        $('#turnOn').on('touchmove click', function(){
-            $("#content_popup_div").hide(); 
-        });
         $('#button_volume_up').on('touchmove click', function(e){
-            requestVolumeChange(10);
+            requestVolumeChange(20);
             e.stopPropagation();
         });
         $('#button_volume_down').on('touchmove click', function(e){
-            requestVolumeChange(-10);
+            requestVolumeChange(-20);
             e.stopPropagation();
         });
         $('#button_unmute').on('touchmove click', function(e){
