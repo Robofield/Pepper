@@ -1,5 +1,5 @@
 ## Pepper App Launcher
-   This project is a modified version of the app-launcher provided by Aldebaran,  customized to be compatible with UTS.
+   This project is a modified version of the app-launcher provided by SoftBank Robotics Labs, customized to be compatible with UTS.
 
 
 
