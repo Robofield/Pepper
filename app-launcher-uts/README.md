@@ -13,7 +13,7 @@ This app launcher is a service designed to facilitate easy access to application
 
 ## Installation
    To install this app-launcher, follow the same procedure as installing any application:
-   1. Connect the Pepper to you laptop via Ethernet.
+   1. Connect the Pepper to your laptop via Ethernet.
    2. Open Choregraphe and configure your robot.
    3. Open the app-launcher project and run `package and install current project to the robot`.
 
