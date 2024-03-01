@@ -40,10 +40,16 @@ This app launcher is a service designed to facilitate easy access to application
    If you want to change the design of main button, you can modify`dynamic_pageHome_app_button>div` style in html/css/main.css.
    
 
+From this, 
 
-<img src="https://github.com/Robofield/Pepper/assets/73512536/229e234b-9538-4f76-b7e1-7ba77148d1b1" width="300" height="auto"> <img src="https://github.com/Robofield/Pepper/assets/73512536/60b85235-83d6-455d-aec6-66f3d7b7f544" width="300" height="auto">
+<img src="https://github.com/Robofield/Pepper/assets/73512536/229e234b-9538-4f76-b7e1-7ba77148d1b1" width="300" height="auto"> <img src="https://github.com/Robofield/Pepper/assets/73512536/0bfd8170-cb33-4ce6-92a0-3094e25c791e" height="300" width="auto">
+
+
+To this, 
+
+<img src="https://github.com/Robofield/Pepper/assets/73512536/60b85235-83d6-455d-aec6-66f3d7b7f544" width="300" height="auto"> <img src="https://github.com/Robofield/Pepper/assets/73512536/ade6ca25-e74d-4827-ae9d-c4f7972f87e3" height="300" width="auto">
       
    
-##### Copyright and LICENSE 
+##### COPYRIGHT and LICENSE 
 * The original app-launcher is provided by SoftBank Robotics Labs and is subject to their copyright.
 Please note that while this version has been customized for use with UTS, the original work remains subject to SoftBank Robotics Labs' copyright. Refer to the [COPYRIGHT](https://github.com/Robofield/Pepper/tree/main/app-launcher-uts/COPYRIGHT) folder or [their repository](https://github.com/softbankrobotics-labs/app-launcher, "SoftBankRobotics-labs app-launcher repository") for more details. 
