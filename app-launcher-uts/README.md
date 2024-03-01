@@ -38,6 +38,8 @@ This app launcher is a service designed to facilitate easy access to application
    If you want to change the design of main button, you can modify`dynamic_pageHome_app_button>div` style in html/css/main.css.
    
 
+
+<img src="https://github.com/Robofield/Pepper/assets/73512536/229e234b-9538-4f76-b7e1-7ba77148d1b1" width="300" height="auto"> <img src="https://github.com/Robofield/Pepper/assets/73512536/60b85235-83d6-455d-aec6-66f3d7b7f544" width="300" height="auto">
       
    
 ##### Copyright and LICENSE 
