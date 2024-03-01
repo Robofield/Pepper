@@ -18,8 +18,8 @@ This app launcher is a service designed to facilitate easy access to application
    2. Open Choregraphe and configure your robot.
    3. Open the app-launcher project and run `package and install current project to the robot`.
 
-   This will automatically execute the service. If this app-launcher service is not executed, it may be due to the Pepper already running other services or experiencing conflicts. In such cases, diagnose for any conflicting services using Pepper shell.
-
+   This will automatically execute the service. If this app-launcher service is not executed, it may be due to the Pepper already running other services or experiencing conflicts. In such          cases, diagnose for any conflicting services using Pepper shell.
+  
 ## Customization
 
    ### Edit page buttons
@@ -52,7 +52,7 @@ To this,
 ### Contibutors 
 - SoftBank Robotics Labs
 - Mina Jang (minazzangya@gmail.com)
-- 
+  
 ##### COPYRIGHT and LICENSE 
 * The original app-launcher is provided by SoftBank Robotics Labs and is subject to their copyright.
 Please note that while this version has been customized for use with UTS, the original work remains subject to SoftBank Robotics Labs' copyright. Refer to the [COPYRIGHT](https://github.com/Robofield/Pepper/tree/main/app-launcher-uts/COPYRIGHT) folder or [their repository](https://github.com/softbankrobotics-labs/app-launcher, "SoftBankRobotics-labs app-launcher repository") for more details. 
