@@ -18,7 +18,7 @@ This app launcher is a service designed to facilitate easy access to application
 
    This will automatically execute the service. If this app-launcher service is not executed, it may be due to the Pepper already running other services or experiencing conflicts. In such cases, diagnose for any conflicting services using Pepper shell.
 
-## Costomization
+## Customization
 
    #### Edit page buttons
    To edit the buttons displayed on the launcher interface, you can modify the ["defaultPreferences.json"](https://github.com/Robofield/Pepper/tree/main/app-launcher-uts/App-Launcher/lib) in       lib directory. Each button's information is represented by key-value pairs in this file. You can change the value of "title" key to set the desired button name, and modify the value of          "apps" key to display the applications icon on the page.
