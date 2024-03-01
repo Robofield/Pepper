@@ -1,5 +1,0 @@
-topic: ~applauncher_pages_names_topic()
-language: dad
-
-dynamic:applauncher_pages_names
-u:(_~applauncher_pages_names) $AppLauncher/PageRequired=$1
