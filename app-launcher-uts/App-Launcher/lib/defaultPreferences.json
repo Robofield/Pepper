@@ -1,0 +1,32 @@
+{
+	"0":{
+		"title":{
+			"English":"Lab Tour Guide"
+		},"apps":[
+			"guider"]
+	},
+	"1":{
+		"title":{
+			"English":"new page" 
+		},"apps":[
+			"add your app UUID"]
+	},
+	"2":{
+		"title":{
+			"English":"new page" 
+		},"apps":[
+			"Put your application Id here"]
+	},
+	"3":{
+		"title":{
+			"English":"new page" 
+		},"apps":[
+			"Put your application Id here"]
+	},
+	"4":{
+		"title":{
+			"English":"new page" 
+		},"apps":[
+			"Put your application Id here"]
+	}
+}
