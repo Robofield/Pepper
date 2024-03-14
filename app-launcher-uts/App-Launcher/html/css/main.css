@@ -159,7 +159,6 @@ button:focus {
 }
 #dynamic_pageHome_div {
     margin-top:20%;
-    /* margin-left: 20%; */
     text-align: center;
 }
 .dynamic_pageHome_app_button {
@@ -167,18 +166,18 @@ button:focus {
     margin-right:5px;
     display: inline-block;
 }
+
 .dynamic_pageHome_app_button>div{
-    /* button name design */
     font-size: 30px;
     width: 250px;
     height:150px;
-    background-color: rgba(0,0,0,0.8);/* #f3f6fe;*/
+    background-color: rgba(0,0,0,0.8);
     color: #f3f6fe;
     text-align: center;
-    /* border-radius: 100px; */
     white-space: normal;
     display: table-cell;
     vertical-align: middle;
+    border-radius: 50px;
 }
 
 .dynamic_page_line1_div {

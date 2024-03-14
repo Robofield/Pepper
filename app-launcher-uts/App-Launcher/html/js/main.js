@@ -1,5 +1,4 @@
 var audio = new Audio('change_screen.ogg');
-var color = ['#ee6675','#00979a','#e64d40','#009667','#85c553','#814a74','#f58239'];var current_color=0;
 
 $(document).ready(
     function() {
@@ -106,6 +105,7 @@ function add_app_to_page(page_div_id, app_id, name, launch_path, icon) {
         $("#"+page_div_id+" .dynamic_page_line2_div").removeClass("line2_div_right");
     }
 }
+
 function add_page(id, name, apps) {
     var identifier = "dynamic_page"+id
 
