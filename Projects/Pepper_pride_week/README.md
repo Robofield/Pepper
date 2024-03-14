@@ -4,3 +4,6 @@ This project involves the simple creation of a guide robot, serving as both an i
 
 JavaSDK and jQuery are used to manipulate the tablet and pepper, with Choregraphe bevaviour to launch webview on tablet.
 
+
+#### Contributors
+- Mina Jang (minazzanya@gmail.com)
